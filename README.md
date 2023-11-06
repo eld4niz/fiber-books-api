@@ -1,4 +1,4 @@
-# Project Name
+# Fiber Framework REST API
 
 This is a RESTful API written in Go, utilizing the Fiber framework and connected to a PostgreSQL database.
 
