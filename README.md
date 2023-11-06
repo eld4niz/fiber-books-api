@@ -2,6 +2,15 @@
 
 This is a RESTful API written in Go, utilizing the Fiber framework and connected to a PostgreSQL database.
 
+
+## Prerequisites
+
+Before running the application, ensure you have the following installed:
+
+- Go (at least version 1.19)
+- PostgreSQL
+- [Fiber v2](https://github.com/gofiber/fiber)
+
 ## Project Structure
 
 The project has the following structure:
@@ -24,28 +33,6 @@ The project has the following structure:
 - `router/`: Handles routing logic.
     - `router.go`: Defines application routes.
 - `server`: Compiled binary of the application.
-
-
-## Prerequisites
-
-Before running the application, ensure you have the following installed:
-
-- Go (at least version 1.19)
-- PostgreSQL
-- [Fiber v2](https://github.com/gofiber/fiber)
-
-## Running the Application
-
-To run the application, run the following command:
-
-#### Ways to Run
-```bash
-make watch
-```
-OR
-```bash
-go run main.go
-```
 
 ## Endpoints
 ``
@@ -80,4 +67,17 @@ PUT /api/v1/books/:id - Updating Specific Book Object:
     "category": "Another Category",
     "price": 78.44
 }
+```
+
+## Running the Application
+
+To run the application, run the following command:
+
+#### Ways to Run
+```bash
+make watch
+```
+OR
+```bash
+go run main.go
 ```
